@@ -57,7 +57,7 @@
         if (index < usernames.length) {
             GM_setValue(STORAGE_KEY_INDEX, index);
             const nextUser = usernames[index];
-            window.location.href = `https://yu-scene.net/dashboard/users/${nextUser}/edit`;
+            window.location.href = location.origin + `/dashboard/users/${nextUser}/edit`;
         } else {
             alert('All users processed!');
             GM_setValue(STORAGE_KEY_USERNAMES, []);
@@ -68,7 +68,7 @@
     // ==========================================================
     // Auto-redirect Block: If on a public profile page, check if it matches the current user.
     // ==========================================================
-    if (location.hostname === "yu-scene.net" && location.pathname.match(/^\/users\/([^/]+)$/)) {
+    if (location.pathname.match(/^\/users\/([^/]+)$/)) {
         const m = location.pathname.match(/^\/users\/([^/]+)$/);
         if (m) {
             const username = m[1];
@@ -80,7 +80,7 @@
                 navigateToNextUser();
             } else {
                 // Otherwise, redirect to the dashboard edit page.
-                window.location.href = `https://yu-scene.net/dashboard/users/${username}/edit`;
+                window.location.href = location.origin + `/dashboard/users/${username}/edit`;
             }
             return;
         }
@@ -223,7 +223,7 @@
                 return;
             }
             updateStatus();
-            window.location.href = `https://yu-scene.net/dashboard/users/${storedUsernames[0]}/edit`;
+            window.location.href = location.origin + `/dashboard/users/${storedUsernames[0]}/edit`;
         });
 
         // Reset button: clear stored data and reset textarea.
