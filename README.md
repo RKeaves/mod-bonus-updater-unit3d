@@ -23,13 +23,18 @@ This script automates the process of updating the seed bonus for multiple users.
 
 ---
 
-## Features
+## Integration with Profile URL Collector
 
-- **Batch Update**: Process multiple usernames from an uploaded `.txt` file.
-- **Automated Navigation**: Automatically navigates to each user's dashboard edit page.
-- **Configurable Delays**: Apply adjustable delays (in seconds) before and after updates to avoid overwhelming the server.
-- **Floating Control Panel**: View real-time progress, upload username lists, adjust delay settings, and reset data.
-- **Seamless Updates**: Automatically updates the seed bonus to a specified target value (**20000** by default).
+This script is designed to work in tandem with the [Profile URL Collector](https://github.com/RKeaves/mod-profile-url-collector-unit3d/tree/main) userscript. The Profile URL Collector automatically gathers profile URLs across paginated pages and generates a `.txt` file containing the collected profiles.
+
+**Workflow:**
+1. **Collect Profile URLs:**  
+   Use the Profile URL Collector to create a `.txt` file with the profile URLs or usernames.
+   
+2. **Update Seed Bonus:**  
+   Upload the generated `.txt` file into this script’s floating control panel to update the seed bonus for each corresponding user.
+
+This integration streamlines the process, allowing you to efficiently collect profile data and then perform batch updates on user accounts.
 
 ---
 
@@ -78,6 +83,10 @@ This script automates the process of updating the seed bonus for multiple users.
    - Click the file upload button in the floating control panel.
    - Select a `.txt` file containing usernames (one per line).
    - The usernames will be displayed in the textarea and stored for processing.
+
+> **Note:**
+> Works with the [Profile URL Collector](https://github.com/RKeaves/mod-profile-url-collector-unit3d/tree/main) to automatically gather profile URLs from paginated pages and generate a `.txt` file.
+
 
 2. **Starting the Process**:
    - Click the **Start Process** button in the floating control panel.
