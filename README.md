@@ -6,7 +6,7 @@
 
 _A userscript for updating seed bonus values on dashboard edit pages across unit3d-based trackers._  
 
-This script automates the process of updating the seed bonus for multiple users. For each username listed in an uploaded `.txt` file, the script navigates to the corresponding dashboard edit page, sets the seed bonus to a specified value (default is **20000**), and applies user-configurable delays before and after each update. A floating control panel remains visible during the process to display progress and allow adjustments.
+This script automates the process of updating the seed bonus for multiple users. For each username listed in an uploaded `.txt` file, the script navigates to the corresponding dashboard edit page, sets the seed bonus to a specified value (default is **20000**), and applies user-configurable delays before and after each update.progress and allow adjustments.
 
 <p align="center">
   <img src="https://ptpimg.me/g714zc.png" alt="Tracker Icon"">
