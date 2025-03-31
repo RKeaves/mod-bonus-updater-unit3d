@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         mod-bonus-updater
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/rkeaves
 // @version      1.4.4
 // @description  For each username from an uploaded .txt file, the script navigates to the corresponding dashboard edit page and updates the user's seed bonus to a specified value. A floating control panel displays progress, and configurable delays (in seconds) are applied before and after each update to space out requests.
 // @namespace    https://github.com/rkeaves
