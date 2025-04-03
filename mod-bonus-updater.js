@@ -7,7 +7,6 @@
 // @downloadURL  https://github.com/rkeaves/mod-bonus-updater/raw/main/mod-bonus-updater.js
 // @updateURL    https://github.com/rkeaves/mod-bonus-updater/raw/main/mod-bonus-updater.js
 // @match        https://privatesilverscreen.cc/*
-// @match        https://yu-scene.net/*
 // @grant        GM_setValue
 // @grant        GM_getValue
 // @grant        GM_registerMenuCommand
